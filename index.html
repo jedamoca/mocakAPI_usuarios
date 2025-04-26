@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mockAPI-JM</title>
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,600;1,600&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>  
+    <h1 class="logo">mockAPI-JM</h1>
+    <ul>
+      <li><a href="#datos">Datos Usuarios</a></li>
+      <li><a href="#formulario">Formulario</a></li>
+    </ul>  
+    
+  </header>
+  <section class="datos" id="datos">
+    <h2 class="titulo-datos">Datos Usuarios</h2>
+    <table class="tabla-datos">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>NOMBRE</td>
+          <td>EMAIL</td>
+          <td>PAIS</td>
+          <td>TIPO DE VEHICULO</td>
+        </tr>
+      </thead>
+      <tbody class="cuerpo-tabla-datos">
+      </tbody>
+    </table>
+    <div class="paginas">
+      <button class="btn-pagina-siguiente">Pagina siguiente</button>
+      <button class="btn-pagina-anterior">Pagina anterior</button>
+      <p class="indice-pagina">Pagina: 1 </p>
+    </div>
+  </section>
+  <section class="formulario" id="formulario">
+    <h2 class="titulo-formulario">Agregar Usuario</h2>
+    <form class="crud-formulario">
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      <input type="text" name="pais" id="pais" placeholder="Pais" required>
+      <input type="text" name="vehiculo" id="vehiculo" placeholder="vehiculo" required>
+      <input type="submit" value="Enviar Datos">
+      <input type="hidden" name="id">
+    </form>
+  </section>
+  <footer>
+    <p>©Jesus Morales - ING </p>
+  </footer>
+
+  <script src="js/crud-mockAPI.js"></script>
+</body>
+</html>
